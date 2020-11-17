@@ -1,20 +1,26 @@
-
-  #container {
-    margin : auto;
+:root {
+    --numCols: 1;
+    --numRows: 1;
+}
+ 
+ #container {
     display: grid;
-    grid-template-rows: repeat(var(--grid-rows), 50px);
-    grid-template-columns: repeat(var(--grid-cols), 50px);
+    margin:auto;
+    justify-content: center;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols),  1fr); 
+    width : 600px;
+    height : 600px;
+    border:black solid 5px; 
+
   }
-  
-  .grid-item {
-    padding: 1em;
+
+  .grid {
     border: 1px solid #ddd;
     text-align: center;
+   
   }
 
   .cell {
   border: 2px solid gray;
-  min-width: 10px;
-  min-height: 20px;
-  display: inline-block;
 }
