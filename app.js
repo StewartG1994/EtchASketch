@@ -3,6 +3,12 @@ const buttons =document.querySelector('.buttons');
 const redBtn = document.getElementById('red');
 const random = document.getElementById('random');
 const reset = document.getElementById('reset');
+const text = document.getElementById('text');
+const submit = document.getElementById('submit')
+
+submit.addEventListener('click', ()=>{
+  createDiv(text.value)
+})
 
 function randomColor() {
   let color = [];
@@ -25,10 +31,6 @@ for (i = 0; i < (number* number); i++){
   container.appendChild(div).className = 'div';
   [i];
 }}
-
-let gridSize = prompt('Enter a number between 16 and 64')
-createDiv(gridSize)
-
 
 redBtn.addEventListener('click', () => {
   container.addEventListener('mouseover', event => {
